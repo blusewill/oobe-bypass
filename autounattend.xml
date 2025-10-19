@@ -119,8 +119,6 @@ Set-ItemProperty -LiteralPath $key -Name 'ConfigureStartPins' -Value $json -Type
 &lt;/LayoutModificationTemplate&gt;
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-01.ps1">
-Remove-Item "C:\unattend.xml"
-Remove-Item "C:\Windows\System32\Bypass.exe"
 		</File>
 		<File path="C:\Windows\Setup\Scripts\Specialize.ps1">
 $scripts = @(

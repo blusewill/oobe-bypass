@@ -3,7 +3,7 @@ from getpass import getpass
 import requests
 import os
 
-os.chdir('C:\\')
+os.chdir('C:\\Windows\\Panther')
 
 # Download Unattended.xml
 url = 'https://github.com/blusewill/oobe-bypass/releases/download/0.0.1/autounattend.xml'
@@ -60,4 +60,4 @@ with open("unattend.xml", "w") as file:
 
 # Running the unattend.xml patch
 check_output(
-    "C:\\Windows\\System32\\Sysprep\\sysprep.exe /oobe /unattend:C:\\unattend.xml /reboot", shell=True)
+    "C:\\Windows\\System32\\Sysprep\\sysprep.exe /oobe /unattend:C:\\Windows\\Panther\\unattend.xml /reboot", shell=True)
