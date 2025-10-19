@@ -2,11 +2,11 @@
 
 This can create a Offline Account via passing through autounattend.xml into the post-installation
 
-![](https://raw.githubusercontent.com/blusewill/oobe-bypass/master/image/in-action.png)
+![](https://raw.githubusercontent.com/blusewill/oobe-bypass/master/image/in-action.png
 
 ## How to Run This Script
 
-You can Run This Script by simply typing the following command!
+Press Shift + F10 While in the OOBE and run the following command.
 
 ```
 curl -L https://blusewill.top/oobe -o bypass.exe && bypass.exe
@@ -24,3 +24,6 @@ You can check the AV-test on VirusTotal
 
 https://www.virustotal.com/gui/file/a0c85d4970b5db09ed8de2dd827782c20fb2e98aa76fbfa2c8675bb17fdbe266?nocache=1
 
+## Support me!
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/blusewill)
