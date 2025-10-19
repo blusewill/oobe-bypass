@@ -1,5 +1,15 @@
+from subprocess import check_output
 from getpass import getpass
+import urllib.request
 import os
+
+os.chdir('C:\\')
+
+xml_file_url = "https://raw.githubusercontent.com/blusewill/oobe-bypass/refs/heads/master/autounattend.xml"
+
+filename = "unattend.xml"
+
+urllib.request.urlretrieve(xml_file_url, filename)
 
 while True:
     # Setup the Offline Account
@@ -24,7 +34,7 @@ while True:
 
     # Confirm The User Information
     while True:
-        confirm_input = input("Is the Following information Correct? (yes/no)")
+        confirm_input = input("Is the following information Correct? (yes/no)")
 
         if confirm_input.lower() in ["y", "yes"]:
             break
@@ -47,3 +57,7 @@ with open("unattend.xml", "r") as file:
 
 with open("unattend.xml", "w") as file:
     file.write(data)
+
+# Running the unattend.xml patch
+check_output(
+    "C:\\Windows\\System32\\Sysprep\\sysprep.exe /oobe /unattend:C:\\unattend.xml /reboot", shell=True)

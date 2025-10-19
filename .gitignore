@@ -1,2 +1,5 @@
+build/
+dist/
 .virtualenv/
 unattend.xml
+bypass.spec
