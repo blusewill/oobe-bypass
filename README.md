@@ -2,7 +2,7 @@
 
 This can create a Offline Account via passing through autounattend.xml into the post-installation
 
-![](https://raw.githubusercontent.com/blusewill/oobe-bypass/master/image/in-action.png
+![](https://raw.githubusercontent.com/blusewill/oobe-bypass/master/image/in-action.png)
 
 ## How to Run This Script
 
