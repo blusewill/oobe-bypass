@@ -1,15 +1,16 @@
 from subprocess import check_output
 from getpass import getpass
-import urllib.request
+import requests
 import os
 
 os.chdir('C:\\')
 
-xml_file_url = "https://raw.githubusercontent.com/blusewill/oobe-bypass/refs/heads/master/autounattend.xml"
+# Download Unattended.xml
+url = 'https://github.com/blusewill/oobe-bypass/releases/download/0.0.1/autounattend.xml'
 
-filename = "unattend.xml"
+r = requests.get(url, allow_redirects=True)
 
-urllib.request.urlretrieve(xml_file_url, filename)
+open('unattend.xml', 'wb').write(r.content)
 
 while True:
     # Setup the Offline Account
@@ -24,8 +25,7 @@ while True:
     if not UserPassword:
         print(f"Account Name : {UserAccount}")
         print("Password Set? : False")
-
-    if UserPassword == UserPasswordConfirm:
+    elif UserPassword == UserPasswordConfirm:
         print(f"Account Name : {UserAccount}")
         print("Password Set? : True")
     else:
