@@ -6,7 +6,7 @@ import os
 os.chdir('C:\\Windows\\Panther')
 
 # Download Unattended.xml
-url = 'https://github.com/blusewill/oobe-bypass/releases/download/0.0.1/autounattend.xml'
+url = 'https://raw.githubusercontent.com/blusewill/oobe-bypass/refs/heads/master/autounattend.xml'
 
 r = requests.get(url, allow_redirects=True)
 
