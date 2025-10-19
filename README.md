@@ -22,7 +22,7 @@ The Anti-Virus might have some false postive. Since it's compiled via pyinstalle
 
 You can check the AV-test on VirusTotal
 
-https://www.virustotal.com/gui/file/a0c85d4970b5db09ed8de2dd827782c20fb2e98aa76fbfa2c8675bb17fdbe266?nocache=1
+https://www.virustotal.com/gui/file/67ffa7ff042aac7115b3d348bd0f6ff230f40077909fc2853af61169a7406cce?nocache=1
 
 ## Support me!
 
